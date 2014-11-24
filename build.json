@@ -1,0 +1,16 @@
+{
+    "scrollTips": {
+        "version": "0.3.0",
+        "files" : {
+            "build/scrollTips.0.3.0.js" : [
+                "src/scrollTips.js"
+            ]
+        },
+        "module": "Nova.scrollTips",
+        "src": "src/scrollTips.js",
+        "requires": {
+            "widget": "module/widget/1.0.2/widget",
+            "IScroll": "module/iscroll/5.1.1/iscroll"
+        }
+    }
+}

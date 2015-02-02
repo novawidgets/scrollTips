@@ -1,4 +1,16 @@
-(function(){
+(function(root, factory) {
+if(typeof exports === 'object') {
+module.exports = factory.apply(root);
+} else if(typeof define === 'function' && define.amd) {
+define(['module/widget/1.0.2/widget','module/iscroll/5.1.1/iscroll'], function() {return factory.apply(root, arguments)});
+} else {
+root['ScrollTips'] = factory.apply(root);
+}
+})(this, function(widget,IScroll) {
+widget = widget || this.widget;
+IScroll = IScroll || this.IScroll;
+
+
 	var directionMap = {
 			X: 'left',
 			Y: 'top'
@@ -120,5 +132,5 @@
 		});
 	}
 
-	this.ScrollTips = ScrollTips;
-})();
+	return ScrollTips;
+});

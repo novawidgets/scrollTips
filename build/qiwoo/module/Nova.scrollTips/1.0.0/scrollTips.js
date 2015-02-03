@@ -6,8 +6,8 @@ define(['module/widget/1.0.2/widget','module/iscroll/5.1.1/iscroll'], function()
 } else {
 root['ScrollTips'] = factory.apply(root);
 }
-})(this, function(widget,IScroll) {
-widget = widget || this.widget;
+})(this, function(Widget,IScroll) {
+Widget = Widget || this.Widget;
 IScroll = IScroll || this.IScroll;
 
 
